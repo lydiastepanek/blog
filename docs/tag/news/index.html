@@ -5,7 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>News - Lydia on Security</title>
-    <link rel="stylesheet" href="../../assets/built/screen.css%3Fv=b281d21838.css">
+    <link rel="stylesheet" href="../../assets/built/screen.css%3Fv=0b938f190c.css">
+
+    <script>
+        if (localStorage.getItem('alto_dark') == 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
 
     <link rel="canonical" href="index.html" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -50,7 +56,7 @@
 
     <meta name="generator" content="Ghost 5.19" />
     <link rel="alternate" type="application/rss+xml" title="Lydia on Security" href="../../rss/index.html" />
-    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.14/umd/portal.min.js" data-ghost="http://localhost:2368/" data-key="1049a166e7ddd7ce0e900b8e16" data-api="http://localhost:2368/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.14/umd/portal.min.js" data-ghost="http://localhost:2368/" data-key="0907a7bb684cc0b46d17290837" data-api="http://localhost:2368/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
 .gh-post-upgrade-cta {
     display: flex;
     flex-direction: column;
@@ -114,17 +120,17 @@
 .gh-post-upgrade-cta a.gh-btn:hover {
     opacity: 0.92;
 }</style>
-    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="1049a166e7ddd7ce0e900b8e16" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="http://localhost:2368/" crossorigin="anonymous"></script>
-    <script defer src="../../public/cards.min.js%3Fv=b281d21838"></script>
-    <link rel="stylesheet" type="text/css" href="../../public/cards.min.css%3Fv=b281d21838.css">
-    <script defer src="../../public/member-attribution.min.js%3Fv=b281d21838"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="0907a7bb684cc0b46d17290837" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="http://localhost:2368/" crossorigin="anonymous"></script>
+    <script defer src="../../public/cards.min.js%3Fv=0b938f190c"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/cards.min.css%3Fv=0b938f190c.css">
+    <script defer src="../../public/member-attribution.min.js%3Fv=0b938f190c"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
 </head>
 
-<body class='tag-template tag-news is-head-b--n--a'>
+<body class="tag-template tag-news">
 <div class="site">
 
     <header id="gh-head" class="gh-head gh-outer">
-    <div class="gh-head-inner gh-inner">
+    <div class="gh-head-inner">
 
         <div class="gh-head-brand">
             <div class="gh-head-brand-wrapper">
@@ -146,8 +152,15 @@
 
         <div class="gh-head-actions">
             <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
-                <button class="button-text menu-item members-login" data-portal="signin">Login</button>
-                <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
+            <div class="toggle-track">
+                <div class="toggle-moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+    <path d="M13.333 2.667c-2.427 0-4.707 0.667-6.667 1.8 4 2.307 6.667 6.6 6.667 11.533s-2.667 9.227-6.667 11.533c1.96 1.133 4.24 1.8 6.667 1.8 7.36 0 13.333-5.973 13.333-13.333s-5.973-13.333-13.333-13.333z"></path>
+</svg></div>
+                <div class="toggle-sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+    <path d="M4.733 24.72l1.88 1.88 2.4-2.387-1.893-1.893zM14.667 29.933c0.427 0 2.667 0 2.667 0v-3.933h-2.667zM16 7.333c-4.413 0-8 3.587-8 8s3.587 8 8 8c4.413 0 8-3.587 8-8 0-4.427-3.587-8-8-8zM26.667 16.667h4v-2.667h-4zM22.987 24.213l2.4 2.387 1.88-1.88-2.387-2.4zM27.267 5.947l-1.88-1.88-2.4 2.387 1.893 1.893zM17.333 0.733h-2.667v3.933h2.667zM5.333 14h-4v2.667h4zM9.013 6.453l-2.4-2.387-1.88 1.88 2.387 2.4 1.893-1.893z"></path>
+</svg></div>
+                <div class="toggle-thumb"></div>
+            </div>
         </div>
 
     </div>
@@ -156,54 +169,73 @@
 
     <div class="site-content">
         
+<div class="content-area">
 <main class="site-main">
 
-    <section class="tag">
+        <section class="term gh-outer">
+            <div class="term-wrapper">
+                <h1 class="term-name">News</h1>
+                <div class="term-description"></div>
+            </div>
+        </section>
 
-        <div class="gh-canvas">
+    <div class="post-feed">
+            <article class="post tag-news">
 
-            <h1 class="tag-name">News</h1>
-
-
-
+    <figure class="post-media gh-canvas">
+        <div class="u-placeholder horizontal kg-width-wide">
+            <a class="post-image-link" href="../../coming-soon/index.html">
+                <img
+                    class="post-image u-object-fit"
+                    srcset="https://static.ghost.org/v4.0.0/images/feature-image.jpg 400w,
+                            https://static.ghost.org/v4.0.0/images/feature-image.jpg 750w,
+                            https://static.ghost.org/v4.0.0/images/feature-image.jpg 960w,
+                            https://static.ghost.org/v4.0.0/images/feature-image.jpg 1140w,
+                            https://static.ghost.org/v4.0.0/images/feature-image.jpg 1920w"
+                    sizes="(min-width: 960px) 960px, 92vw"
+                    src="https://static.ghost.org/v4.0.0/images/feature-image.jpg"
+                    alt="Coming soon"
+                    loading="lazy"
+                >
+            </a>
         </div>
+    </figure>
 
-    </section>
+    <div class="gh-canvas">
+        <header class="post-header">
+            <h2 class="post-title">
+                <a class="post-title-link" href="../../coming-soon/index.html">Coming soon</a>
+            </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2022-10-24">Oct 24, 2022</time>
+                </span>
+                    <span class="post-meta-item post-meta-tags"><a class="post-tag post-tag-news" href="index.html" title="News">News</a></span>
+            </div>
+        </header>
 
-    <div class="post-feed gh-feed gh-canvas">
-            <article class="feed public post tag-news">
-
-    <div class="feed-calendar">
-        <div class="feed-calendar-month">
-            Oct
-        </div>
-        <div class="feed-calendar-day">
-            16
-        </div>
+            <div class="post-excerpt">
+                This is Lydia on Security, a brand new site by Lydia Stepanek that's just getting started. Things will be up and running here shortly, but you can subscribe in the meantime if you'd
+            </div>
     </div>
-
-    <h2 class="feed-title">Do Americans actually care about security?</h2>
-
-    <div class="feed-right">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon icon-star">
-    <path d="M16 23.027L24.24 28l-2.187-9.373 7.28-6.307-9.587-.827-3.747-8.827-3.747 8.827-9.587.827 7.267 6.307L7.759 28l8.24-4.973z"></path>
-</svg>        <div class="feed-length">
-            3 min read
-        </div>
-    </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon feed-icon">
-    <path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path>
-</svg>
-    <a class="u-permalink" href="../../coming-soon/index.html" aria-label="Do Americans actually care about security?"></a>
 
 </article>    </div>
 
-    <nav class="load-more">
-    <button class="button button-secondary gh-loadmore">Load more</button>
+    <div class="gh-outer">
+<nav class="pagination">
+
+    <div class="pagination-left">
+    </div>
+
+
+    <div class="pagination-right">
+    </div>
+
 </nav>
+</div>
 
 </main>
+</div>
     </div>
 
     <footer class="gh-foot gh-outer">
@@ -231,7 +263,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous">
 </script>
-<script src='../../assets/built/main.min.js%3Fv=b281d21838'></script>
+<script src="../../assets/built/main.min.js%3Fv=0b938f190c"></script>
 
 
 
